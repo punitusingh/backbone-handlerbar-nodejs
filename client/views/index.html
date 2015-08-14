@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample nodejs application</title>
+    <style>
+        .thumbnail{
+            width: 200px;
+            height: 250px;
+            border: 1px solid grey;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .thumbnail img{
+            border-radius: 50%;
+        }
+
+        .thumbnail h1{
+            position: absolute;
+            top:50%;
+            margin-top:-37px;
+            left:20%;
+        }
+
+        #recommendation-container{
+            margin: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="recommendation-container">
+
+
+    </div>
+
+
+</body>
+
+<script id="thumbnail-template" type="text/x-handlebars-template">
+    <div class="thumbnail">
+        <h1>{{this.id}}</h1>
+    </div>
+</script>
+
+
+<script id="thumbnail-template-1" type="text/x-handlebars-template">
+    <div class="thumbnail" data-id="{{this.id}}">
+        <img src="http://images.qa19codemacys.fds.com/is/image/MCY/products/{{this.imageSource}}?$filtersm$&wid=195&hei=239"/>
+    </div>
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+<script src="/static/js/recommendations/Recommendation-2.js"></script>
+
+
+
+
+
+</html>
+
+
