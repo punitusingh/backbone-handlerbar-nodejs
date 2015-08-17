@@ -2,7 +2,7 @@
 var http=require("http");
 
 var getProduct = function(productid, callback){
-    var url = "http://www1.qa19codemacys.fds.com/api/navigation/products/thumbnail/"+ productid;
+    var url = "/"+ productid;
     console.log("requesting product:",url);
     var request=http.get(url,function(response){
 

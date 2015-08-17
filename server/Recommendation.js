@@ -8,9 +8,9 @@ var querystring=require('querystring');
 
 
 var options = {
-    hostname: 'www1.qa15codemacys.fds.com',
+    hostname: '',
     port: 80,
-    path: '/sdp/rto/request/recommendations',
+    path: '',
     method: 'POST',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
